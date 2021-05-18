@@ -1,0 +1,394 @@
+/* put scroll-snap over here to avoid double scrollbars */ 
+html {
+    overflow: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+  }
+  
+
+body   {
+    box-sizing: border-box!important;
+    margin: 0!important;
+    font-family: 'Arial'!important;
+    background-color: #4F81BD!important ;  
+    
+}
+
+.gradient   {
+    background-image:linear-gradient(#4F81BD, #04264e)!important ;
+    background-color: #4F81BD!important ;  
+}
+
+h1{
+    font-size: 110px!important;
+    line-height: 1.0!important;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right!important;
+}
+
+h2  {
+    padding-top: 40px;
+    font-size: 35px!important;
+    letter-spacing: 3px!important;
+    line-height: 1.2!important;
+    text-align: right!important;
+}
+
+h3  {
+    font-size: 80px!important;
+    line-height: 1.0!important;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right!important;
+}
+
+
+  
+
+section {    
+        height: 100vh;
+        scroll-snap-align: start;
+}
+
+.greenSection   {
+    background-color:#2f4b6d;
+}
+
+.orangeSection  {
+    background-color:#4F81BD;
+}
+
+.purpleSection  {
+    background-color:#2f4b6d;
+}
+
+
+
+.mainTextArea   {
+    color: white;
+    padding-right: 50px!important;
+    display: flex;
+    flex-direction: column;
+    line-height: 20;
+    justify-content: center;
+    line-height: 80%;
+    line-height: 1;
+}
+
+
+
+.secondTextArea {
+    color: white;
+    font-family: 'Alef';
+    font-size: 20px;
+    line-height: 2;
+}
+
+
+
+.headerRow , .heroRow, .footerRow {
+    height: 33.33vh;
+    
+}
+
+.lastfooterRow  {
+    height: calc(33.33vh - 50px)
+}
+
+
+
+.backgroundContainer    {
+    display: none!important;
+    position: absolute;
+    color: white;
+    font-family: 'Alef';
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    
+    background-color:#4F81BD ;
+    
+}
+
+.circle {
+    display: none;
+    position: relative;
+    background-color: cornflowerblue;
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px;
+    background-image: linear-gradient(30deg,#4F81BD, #b2c7e0);
+}
+
+.portfolioTxt   {
+    font-size: 60px;
+    color: red;
+    opacity: 0.5;
+    position: relative;
+    z-index: 10;
+}
+
+.headerRow  {
+    color: white;
+    font-family: 'Alef';
+}
+
+
+.projectArea, .whoArea, .contactArea    {
+    scroll-snap-align: initial;
+}
+
+
+
+@keyframes changingOpacity {
+  from {opacity: 0.3;}
+  to {opacity: 1;}
+  
+}
+
+
+
+.projectButton  {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url(/IMG/architecture-black-and-white-building-business-273209.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 150%;
+}
+
+.projectButton:hover  {
+    
+    animation-name: changingOpacity;
+    animation-duration: 3s; 
+    opacity: 1; 
+    
+}
+
+.projects   {
+    background-color: #204c83;
+    
+}
+
+
+
+
+.headerContainer    {
+    padding-left: 100px;
+    padding-right: 100px;
+    position: fixed;
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.logoContainer  {
+    
+    font-size: 25px;
+    
+    color: white;
+    display: flex;
+    
+    align-items:flex-end;
+    width: 33%;
+    height: 100%;
+}
+
+.logoContainer a{
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: red;
+    opacity: 0.5;
+}
+
+.logoContainer a:hover{
+    
+    color: white;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+.burgerContainer    {
+    display: none;
+    margin-top: 30px;
+    z-index: 10;
+}
+
+.burgerMenu {
+    height: 35px;
+    width: 50px;
+    z-index: 10;
+    
+}
+
+
+
+.burgerMenu:hover {
+    
+    color: white;
+    opacity: 0.8;
+}
+
+.burgerContainer:hover .fullMenu{
+    
+    display: block;
+}
+
+
+
+.burgerMenu hr {
+    border: 1px solid white;
+    background-color: white;
+    opacity: 1;   
+}
+
+
+
+
+.secondTextArea hr  {
+    border: 2px solid red;
+    opacity: 1; 
+    width: 200px;
+}
+
+
+
+.fullMenu   {
+    margin-top: 0px;
+    width: 170px;
+    position: absolute;
+    display: none;
+    
+    right: 0px;
+    text-decoration: none;
+    
+    opacity: 1;
+    
+}
+
+.menuItemsContainer {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    text-align: right;
+    color: white; 
+    padding-right: 100px;
+    font-size: 15px;
+    
+}
+
+.menuItemsContainer a   {
+    text-decoration: none;
+    color: white;  
+}
+
+
+
+
+
+
+
+.stripes2    {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.stripe1    {
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.stripe2   {
+    padding-left: 50px;
+}
+
+.stripe1 hr   {
+    border: 2px solid red;
+    background-color: red;
+    opacity: 0.5; 
+    width: 600px;
+    
+}
+
+.stripe2 hr{
+    border: 2px solid red;
+    background-color: red;
+    opacity: 0.5; 
+    width: 800px;
+    
+    
+}
+
+
+
+
+
+.footerManual   {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: black;
+    z-index: 20;
+}
+
+.lastSection    {
+    
+    scroll-snap-align: end;
+}
+
+
+
+
+
+.iconContainer  {
+    letter-spacing: 4px;
+    width: 10vw;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 25px;
+    color: white;
+}
+
+
+.maxMenu    {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-right: 200px;
+    
+}
+
+.maxMenu a    {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.maxMenu a:hover    {
+text-decoration: none;
+    color: red;
+    opacity: 0.5;
+}
+
